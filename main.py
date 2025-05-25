@@ -160,7 +160,8 @@ class YoutubeDownloaderApp:
             url,
             "--newline",
             "--no-cache-dir",
-            "--restrict-filenames"
+            "--restrict-filenames",
+            "--continue"
         ]
 
         process = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True, encoding='utf-8', bufsize=1)
